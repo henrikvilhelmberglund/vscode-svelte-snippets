@@ -1,4 +1,4 @@
-### 0.5.1 (2022-11-02)
+## 0.5.0 (2022-11-02)
 
 
 ### Features
@@ -16,5 +16,7 @@
 
 ### Bug Fixes
 
+* :bug: escape $app ([fa4660d](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/fa4660d527e7bb07ba4edc78d54652f9619f56bd))
 * **selection:** tab through options ([461c4b7](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/461c4b7b54d0f55183c148b6758f00144fcbcb3e))
+* unfix a bug ([5b84751](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/5b84751098fa9a86ea76ab997c9ae7805a215a58))
 
