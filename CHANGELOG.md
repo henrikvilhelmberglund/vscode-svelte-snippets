@@ -1,3 +1,10 @@
+### [0.5.3](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.2...v0.5.3) (2022-11-02)
+
+
+### Bug Fixes
+
+* :fire: remove comments in slots and head ([c52e653](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/c52e6535d7fae5b25ed2f31950a29e429c16c601))
+
 ### [0.5.2](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/0.5.0...0.5.2) (2022-11-02)
 
 ## 0.5.0 (2022-11-02)
