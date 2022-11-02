@@ -58,7 +58,7 @@
   },
   "scripts": {
     "vscode:publish": "vsce publish",
-    "version": "conventional-changelog -p angular -i ./CHANGELOG.md -s"
+    "version": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s"
   },
   "devDependencies": {}
 }
