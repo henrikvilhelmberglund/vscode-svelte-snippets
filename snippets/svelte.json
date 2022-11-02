@@ -493,7 +493,7 @@
     "prefix": "s-!!",
     "body": [
       "<script>",
-      "import { base } from \"\\$app/paths\";",
+      "import { base } from \"$app/paths\";",
       "\t$1",
       "</script>",
       "",
