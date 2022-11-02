@@ -481,10 +481,10 @@
       "\t$1",
       "</script>",
       "",
-      "$3",
+      "$2",
       "",
       "<style>",
-      "\t$2",
+      "\t$3",
       "</style>"
     ],
     "description": "boilerplate for svelte page"
@@ -497,10 +497,10 @@
       "\t$1",
       "</script>",
       "",
-      "$3",
+      "$2",
       "",
       "<style>",
-      "\t$2",
+      "\t$3",
       "</style>"
     ],
     "description": "boilerplate for svelte page with base folder import"
