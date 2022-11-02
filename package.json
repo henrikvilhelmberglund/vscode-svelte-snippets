@@ -1,17 +1,17 @@
 {
   "name": "vscode-svelte-snippets",
   "displayName": "Svelte 3 Snippets",
-  "description": "Svelte 3 Snippets for VS Code",
-  "version": "0.5.0",
+  "description": "Svelte 3 Snippets for VS Code (fork)",
+  "version": "0.5.1",
   "license": "MIT",
-  "publisher": "fivethree",
+  "publisher": "henrikvilhelmberglund",
   "icon": "icons/logo.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fivethree-team/vscode-svelte-snippets.git"
+    "url": "https://github.com/henrikvilhelmberglund/vscode-svelte-snippets.git"
   },
   "bugs": {
-    "url": "https://github.com/fivethree-team/vscode-svelte-snippets/issues"
+    "url": "https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/issues"
   },
   "engines": {
     "vscode": "^1.26.0"
