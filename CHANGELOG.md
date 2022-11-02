@@ -1,3 +1,5 @@
+### [0.5.2](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/0.5.0...0.5.2) (2022-11-02)
+
 ## 0.5.0 (2022-11-02)
 
 
