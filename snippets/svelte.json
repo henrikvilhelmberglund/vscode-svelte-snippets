@@ -153,7 +153,7 @@
     "prefix": "s-each-index-key-block",
     "body": [
       "{#each ${1:items} as ${2:item},i (${3:key})}",
-      "\t${4: <!-- content here -->}",
+      "\t$4",
       "{/each}"
     ],
     "description": "each index key block"
@@ -162,9 +162,7 @@
     "prefix": "s-await-then-block",
     "body": [
       "{#await ${1:promise}}",
-      "\t<!-- promise is pending -->",
       "{:then ${2:value}}",
-      "\t<!-- promise was fulfilled -->",
       "{/await}"
     ],
     "description": "await then block"
@@ -172,8 +170,7 @@
   "svelte-then-block": {
     "prefix": "s-then-block",
     "body": [
-      "{:then ${1:value}}",
-      "\t<!-- promise was fulfilled -->"
+      "{:then ${1:value}}"
     ],
     "description": "then block"
   },
@@ -181,7 +178,6 @@
     "prefix": "s-await-short-block",
     "body": [
       "{#await ${1:promise} then ${2:value}}",
-      "\t<!-- promise was fulfilled -->",
       "{/await}"
     ],
     "description": "await short block"
@@ -190,11 +186,8 @@
     "prefix": "s-await-catch-block",
     "body": [
       "{#await ${1:promise}}",
-      "\t<!-- ${1:promise} is pending -->",
       "{:then ${value}}",
-      "\t<!-- ${1:promise} was fulfilled -->",
       "{:catch error}",
-      "\t<!-- ${1:promise} was rejected -->",
       "{/await}"
     ],
     "description": "await catch block"
@@ -203,7 +196,6 @@
     "prefix": "s-catch-block",
     "body": [
       "{:catch error}",
-      "\t<!-- promise was rejected -->"
     ],
     "description": "catch block"
   },
@@ -474,5 +466,43 @@
       "<svelte:options ${1|immutable,accessors,namespace,tag|}={${2:value}}/>"
     ],
     "description": "svelte:options"
+  },
+  "svelte-base": {
+    "prefix": "s-base",
+    "body": [
+      "import { base } from \"$app/paths\";"
+    ],
+    "description": "import base folder from $app/paths (for Github Pages etc)"
+  },
+  "svelte-boilerplate": {
+    "prefix": "s-!",
+    "body": [
+      "<script>",
+      "\t$1",
+      "</script>",
+      "",
+      "$3",
+      "",
+      "<style>",
+      "\t$2",
+      "</style>"
+    ],
+    "description": "boilerplate for svelte page"
+  },
+  "svelte-boilerplate-base": {
+    "prefix": "s-!!",
+    "body": [
+      "<script>",
+      "import { base } from \"$app/paths\";",
+      "\t$1",
+      "</script>",
+      "",
+      "$3",
+      "",
+      "<style>",
+      "\t$2",
+      "</style>"
+    ],
+    "description": "boilerplate for svelte page with base folder import"
   }
 }

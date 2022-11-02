@@ -1,12 +1,11 @@
 {
-    "svelte-global-style": {
-        "prefix": "s-global-style",
-        "body": [
-            ":global(${1:body}) {",
-            "\t/* this will apply to <body> */",
-            "\t${2:/* your styles go here */}",
-            "}"
-        ],
-        "description": "add global styles to your style tag"
-    }
+  "svelte-global-style": {
+    "prefix": "s-global-style",
+    "body": [
+      ":global(${1:body}) {",
+      "\t$2",
+      "}"
+    ],
+    "description": "add global styles to your style tag"
+  }
 }
