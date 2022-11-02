@@ -1,3 +1,13 @@
+# Fork of VSCode-Svelte-Snippets
+
+This fork:
+- removes comments in snippets
+- adds base folder import (s-base)
+- adds boilerplate snippets (s-! and s-!!)
+and probably more (after a while). Contributions are welcome.
+
+Original README below.
+
 # Svelte 3 Snippets for VS Code
 
 [![Visual Studio Marketplace](https://vsmarketplacebadge.apphb.com/version/fivethree.vscode-svelte-snippets.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=fivethree.vscode-svelte-snippets)
