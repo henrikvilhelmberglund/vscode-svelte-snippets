@@ -391,21 +391,21 @@
   "svelte-slot": {
     "prefix": "s-slot",
     "body": [
-      "<slot>${1:<!-- optional fallback -->}</slot>"
+      "<slot>$1</slot>"
     ],
     "description": "slot"
   },
   "svelte-slot-name": {
     "prefix": "s-slot-name",
     "body": [
-      "<slot name=\"${1:x}\">${2:<!-- optional fallback -->}</slot>"
+      "<slot name=\"${1:x}\">$2</slot>"
     ],
     "description": "slot w/ name"
   },
   "svelte-slot-prop": {
     "prefix": "s-slot-prop",
     "body": [
-      "<slot ${1:prop}={${2:value}}>${3:<!-- optional fallback -->}</slot>"
+      "<slot ${1:prop}={${2:value}}>$3</slot>"
     ],
     "description": "slot w/ prop"
   },
@@ -455,7 +455,7 @@
     "prefix": "s-head",
     "body": [
       "<svelte:head>",
-      "\t${1:<!-- head content -->}",
+      "\t$1",
       "</svelte:head>"
     ],
     "description": "svelte:head"
