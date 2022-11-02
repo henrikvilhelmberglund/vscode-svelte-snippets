@@ -4,7 +4,9 @@ This fork:
 - removes comments in snippets
 - adds base folder import (s-base)
 - adds boilerplate snippets (s-! and s-!!)
-and probably more (after a while). Contributions are welcome.
+and probably more (after a while). 
+
+**Contributions are welcome!**
 
 Original README below.
 
