@@ -467,13 +467,6 @@
     ],
     "description": "svelte:options"
   },
-  "svelte-base": {
-    "prefix": "s-base",
-    "body": [
-      "import { base } from \"\\$app/paths\";"
-    ],
-    "description": "import base folder from $app/paths (for Github Pages etc)"
-  },
   "svelte-boilerplate": {
     "prefix": "s-!",
     "body": [
