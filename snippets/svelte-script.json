@@ -72,85 +72,92 @@
     "description": "action w/ update function"
   },
   "svelte-on-mount": {
-    "prefix": "s-lifecycle-mount",
+    "prefix": "s-lifecycle-on-mount",
     "body": [
       "onMount(() => {",
-      "\t${1:// content here}",
+      "\t$1",
       "});"
     ],
-    "description": "onMount lifecycle function"
+    "description": "svelte onMount - The onMount function schedules a callback to run as soon as the component has been mounted to the DOM. It must be called during the component's initialisation (but doesn't need to live inside the component; it can be called from an external module)."
   },
   "svelte-before-update": {
     "prefix": "s-lifecycle-before-update",
     "body": [
       "beforeUpdate(() => {",
-      "\t${1:// content here}",
+      "\t$1",
       "});"
     ],
-    "description": "beforeUpdate lifecycle function"
+    "description": "svelte beforeUpdate - Schedules a callback to run immediately before the component is updated after any state change."
   },
   "svelte-after-update": {
     "prefix": "s-lifecycle-after-update",
     "body": [
       "afterUpdate(() => {",
-      "\t${1:// content here}",
+      "\t$1",
       "});"
     ],
-    "description": "afterUpdate lifecycle function"
+    "description": "svelte afterUpdate - Schedules a callback to run immediately after the component has been updated."
   },
   "svelte-on-destroy": {
-    "prefix": "s-lifecycle-destroy",
+    "prefix": "s-lifecycle-on-destroy",
     "body": [
       "onDestroy(() => {",
-      "\t${1:// content here}",
+      "\t$1",
       "});"
     ],
-    "description": "onDestroy lifecycle function"
+    "description": "svelte onDestroy - Schedules a callback to run immediately before the component is unmounted. Out of onMount, beforeUpdate, afterUpdate and onDestroy, this is the only one that runs inside a server-side component."
   },
   "svelte-tick": {
     "prefix": "s-tick",
     "body": [
       "await tick()"
     ],
-    "description": "svelte tick function"
+    "description": "svelte tick - Returns a promise that resolves once any pending state changes have been applied, or in the next microtask if there are none."
   },
   "svelte-set-context": {
-    "prefix": "s-set-content",
+    "prefix": "s-set-context",
     "body": [
       "setContext(${1:key}, ${2:context})"
     ],
-    "description": "svelte setContext"
+    "description": "svelte setContext - Associates an arbitrary context object with the current component and the specified key and returns that object. The context is then available to children of the component (including slotted content) with getContext. Like lifecycle functions, this must be called during component initialisation. NOTE: Context is not inherently reactive. If you need reactive values in context then you can pass a store into context, which will be reactive."
   },
   "svelte-get-context": {
-    "prefix": "s-get-content",
+    "prefix": "s-get-context",
     "body": [
       "getContext(${1:key})"
     ],
-    "description": "svelte getContext"
+    "description": "svelte getContext - Retrieves the context that belongs to the closest parent component with the specified key. Must be called during component initialisation."
   },
-  "svelte-dispatch": {
-    "prefix": "s-dispatch",
+  "svelte-has-context": {
+    "prefix": "s-has-context",
+    "body": [
+      "hasContext(${1:key})"
+    ],
+    "description": "svelte hasContext - Checks whether a given key has been set in the context of a parent component. Must be called during component initialisation."
+  },
+  "svelte-create-event-dispatcher": {
+    "prefix": "s-create-event-dispatcher",
     "body": [
       "const dispatch = createEventDispatcher();"
     ],
-    "description": "svelte dispatch"
+    "description": "svelte dispatch - Creates an event dispatcher that can be used to dispatch component events. Event dispatchers are functions that can take two arguments: name and detail. Component events created with createEventDispatcher create a CustomEvent. These events do not bubble. The detail argument corresponds to the CustomEvent.detail property and can contain any type of data."
   },
   "svelte-dispatch-event": {
     "prefix": "s-dispatch-event",
     "body": [
-      "dispatch(${1:key},${2:data})"
+      "dispatch(${1:\"notify\"}, ${2:\"detail value\"})"
     ],
-    "description": "svelte dispatch event"
+    "description": "svelte dispatch event -  Event dispatchers are functions that can take two arguments: name and detail. Component events created with createEventDispatcher create a CustomEvent. These events do not bubble. The detail argument corresponds to the CustomEvent.detail property and can contain any type of data."
   },
-  "svelte-writeable": {
-    "prefix": "s-writeable",
+  "svelte-store-writeable": {
+    "prefix": "s-store-writeable",
     "body": [
       "const ${1:store} = writable(${2:initialValue});"
     ],
-    "description": "svelte writeable"
+    "description": "svelte store writeable - Function that creates a store which has values that can be set from 'outside' components. It gets created as an object with additional set and update methods. set is a method that takes one argument which is the value to be set. The store value gets set to the value of the argument if the store value is not already equal to it. update is a method that takes one argument which is a callback. The callback takes the existing store value as its argument and returns the new value to be set to the store."
   },
-  "svelte-writeable-set": {
-    "prefix": "s-writeable-set",
+  "svelte-store-writeable-set": {
+    "prefix": "s-store-writeable-set",
     "body": [
       "const ${1:store} = writable(${2:initialValue}, () => {",
       "\t${3:console.log('got a subscriber');}",
@@ -159,8 +166,8 @@
     ],
     "description": "svelte writeable w/ set function"
   },
-  "svelte-readable": {
-    "prefix": "s-readable",
+  "svelte-store-readable": {
+    "prefix": "s-store-readable",
     "body": [
       "const ${1:store} = readable(${2:initialValue}, () => {",
       "\t${3:console.log('got a subscriber');}",
@@ -169,44 +176,44 @@
     ],
     "description": "svelte readable (set function required)"
   },
-  "svelte-derived": {
-    "prefix": "s-derived",
+  "svelte-store-derived": {
+    "prefix": "s-store-derived",
     "body": [
       "const ${1:derivedStore} = derived(${2:storeA}, $${2:storeA} => $${2:storeA} * 2);"
     ],
-    "description": "svelte derived store"
+    "description": "svelte store derived - Derives a store from one or more other stores. The callback runs initially when the first subscriber subscribes and then whenever the store dependencies change. In the simplest version, derived takes a single store, and the callback returns a derived value."
   },
-  "svelte-derived-multiple": {
-    "prefix": "s-derived-multiple",
+  "svelte-store-derived-multiple": {
+    "prefix": "s-store-derived-multiple",
     "body": [
       "const ${1:derivedStore} = derived([${2:storeA}, ${3:storeB}], ([$${2:storeA}, $${3:storeB}]) => $${2:storeA} + $${3:storeB});"
     ],
-    "description": "svelte derived store"
+    "description": "svelte store derived - Derives a store from one or more other stores. The callback runs initially when the first subscriber subscribes and then whenever the store dependencies change. In the simplest version, derived takes a single store, and the callback returns a derived value."
   },
-  "svelte-derived-set": {
-    "prefix": "s-derived-set",
+  "svelte-store-derived-set": {
+    "prefix": "s-store-derived-set",
     "body": [
       "const ${1:derivedStore} = derived(${2:storeA}, ($${2:storeA}, set) => {",
       "\tsetTimeout(() => set($${2:storeA}), 1000);",
       "}, 'one moment...');"
     ],
-    "description": "svelte derived store"
+    "description": "svelte store derived - Derives a store from one or more other stores. The callback runs initially when the first subscriber subscribes and then whenever the store dependencies change. In the simplest version, derived takes a single store, and the callback returns a derived value."
   },
-  "svelte-derived-multiple-set": {
-    "prefix": "s-derived-multiple-set",
+  "svelte-store-derived-multiple-set": {
+    "prefix": "s-store-derived-multiple-set",
     "body": [
       "const ${1:derivedStore} = derived([${2:storeA}, ${3:storeB}], ([$${2:storeA}, $${3:storeB}], set) => {",
       "\tsetTimeout(() => set($${2:storeA} + $${3:storeB}), 1000);",
       "}, 'one moment...');"
     ],
-    "description": "svelte derived store"
+    "description": "svelte store derived - Derives a store from one or more other stores. The callback runs initially when the first subscriber subscribes and then whenever the store dependencies change. In the simplest version, derived takes a single store, and the callback returns a derived value."
   },
   "svelte-store-get": {
     "prefix": "s-store-get-value",
     "body": [
       "const ${1:value} = get(${2:store});"
     ],
-    "description": "svelte get value from store"
+    "description": "store get - Generally, you should read the value of a store by subscribing to it and using the value as it changes over time. Occasionally, you may need to retrieve the value of a store to which you're not subscribed. get allows you to do so. NOTE: This works by creating a subscription, reading the value, then unsubscribing. It's therefore not recommended in hot code paths."
   },
   "svelte-component-set": {
     "prefix": "s-component-set",
@@ -238,19 +245,19 @@
     ],
     "description": "svelte render component"
   },
-  "svelte-tweened": {
-    "prefix": "s-tweened",
+  "svelte-motion-tweened": {
+    "prefix": "s-motion-tweened",
     "body": [
       "const ${1:store} = tweened(${2:value}, ${3:options});"
     ],
-    "description": "svelte create tweened store"
+    "description": "svelte create tweened store - Tweened stores update their values over a fixed duration. "
   },
-  "svelte-spring": {
-    "prefix": "s-spring",
+  "svelte-motion-spring": {
+    "prefix": "s-motion-spring",
     "body": [
       "const ${1:store} = spring(${2:value}, ${3:options});"
     ],
-    "description": "svelte create spring store"
+    "description": "svelte create spring store - A spring store gradually changes to its target value based on its stiffness and damping parameters. Whereas tweened stores change their values over a fixed duration, spring stores change over a duration that is determined by their existing velocity, allowing for more natural-seeming motion in many situations. "
   },
   "svelte-register": {
     "prefix": "s-register",
@@ -260,11 +267,193 @@
     ],
     "description": "svelte register"
   },
-  "svelte-base": {
+  "svelte-import-base": {
     "prefix": "s-imp-base",
     "body": [
       "import { base } from \"\\$app/paths\";"
     ],
     "description": "import base folder from $app/paths (for Github Pages etc)"
+  },
+  "svelte-import-onMount": {
+    "prefix": "s-imp-onmount",
+    "body": [
+      "import { onMount } from \"svelte\";"
+    ],
+    "description": "import onMount - The onMount function schedules a callback to run as soon as the component has been mounted to the DOM. It must be called during the component's initialisation (but doesn't need to live inside the component; it can be called from an external module)."
+  },
+  "svelte-import-beforeUpdate": {
+    "prefix": "s-imp-beforeupdate",
+    "body": [
+      "import { beforeUpdate } from \"svelte\";"
+    ],
+    "description": "import beforeUpdate - Schedules a callback to run immediately before the component is updated after any state change."
+  },
+  "svelte-import-afterUpdate": {
+    "prefix": "s-imp-after-update",
+    "body": [
+      "import { afterUpdate } from \"svelte\";"
+    ],
+    "description": "import afterUpdate - Schedules a callback to run immediately after the component has been updated."
+  },
+  "svelte-import-onDestroy": {
+    "prefix": "s-imp-on-destroy",
+    "body": [
+      "import { onDestroy } from \"svelte\";"
+    ],
+    "description": "import onDestroy - Schedules a callback to run immediately before the component is unmounted. Out of onMount, beforeUpdate, afterUpdate and onDestroy, this is the only one that runs inside a server-side component."
+  },
+  "svelte-import-tick": {
+    "prefix": "s-imp-tick",
+    "body": [
+      "import { tick } from \"svelte\";"
+    ],
+    "description": "import tick - Returns a promise that resolves once any pending state changes have been applied, or in the next microtask if there are none."
+  },
+  "svelte-import-tick-beforeUpdate": {
+    "prefix": "s-imp-tick-before-update",
+    "body": [
+      "import { beforeUpdate, tick } from \"svelte\";"
+    ],
+    "description": "import tick and beforeUpdate - Returns a promise that resolves once any pending state changes have been applied, or in the next microtask if there are none."
+  },
+  "svelte-import-setContext": {
+    "prefix": "s-imp-set-context",
+    "body": [
+      "import { setContext } from \"svelte\";"
+    ],
+    "description": "import setContext - Associates an arbitrary context object with the current component and the specified key and returns that object. The context is then available to children of the component (including slotted content) with getContext. Like lifecycle functions, this must be called during component initialisation. NOTE: Context is not inherently reactive. If you need reactive values in context then you can pass a store into context, which will be reactive."
+  },
+  "svelte-import-getContext": {
+    "prefix": "s-imp-get-context",
+    "body": [
+      "import { getContext } from \"svelte\";"
+    ],
+    "description": "import getContext - Retrieves the context that belongs to the closest parent component with the specified key. Must be called during component initialisation."
+  },
+  "svelte-import-hasContext": {
+    "prefix": "s-imp-has-context",
+    "body": [
+      "import { hasContext } from \"svelte\";"
+    ],
+    "description": "import hasContext - Checks whether a given key has been set in the context of a parent component. Must be called during component initialisation."
+  },
+  "svelte-import-getAllContexts": {
+    "prefix": "s-imp-get-all-contexts",
+    "body": [
+      "import { getAllContexts } from \"svelte\";"
+    ],
+    "description": "import getAllContexts - Retrieves the whole context map that belongs to the closest parent component. Must be called during component initialisation. Useful, for example, if you programmatically create a component and want to pass the existing context to it."
+  },
+  "svelte-import-createEventDispatcher": {
+    "prefix": "s-imp-create-event-dispatcher",
+    "body": [
+      "import { createEventDispatcher } from \"svelte\";"
+    ],
+    "description": "import createEventDispatcher - Creates an event dispatcher that can be used to dispatch component events. Event dispatchers are functions that can take two arguments: name and detail. Component events created with createEventDispatcher create a CustomEvent. These events do not bubble. The detail argument corresponds to the CustomEvent.detail property and can contain any type of data."
+  },
+  "svelte-import-store-writable": {
+    "prefix": "s-imp-store-writable",
+    "body": [
+      "import { writable } from \"svelte/store\";"
+    ],
+    "description": "import store writable - Function that creates a store which has values that can be set from 'outside' components. It gets created as an object with additional set and update methods. set is a method that takes one argument which is the value to be set. The store value gets set to the value of the argument if the store value is not already equal to it. update is a method that takes one argument which is a callback. The callback takes the existing store value as its argument and returns the new value to be set to the store."
+  },
+  "svelte-import-store-readable": {
+    "prefix": "s-imp-store-readable",
+    "body": [
+      "import { readable } from \"svelte/store\";"
+    ],
+    "description": "import store readable - Creates a store whose value cannot be set from 'outside', the first argument is the store's initial value, and the second argument to readable is the same as the second argument to writable."
+  },
+  "svelte-import-store-derived": {
+    "prefix": "s-imp-store-derived",
+    "body": [
+      "import { derived } from \"svelte/store\";"
+    ],
+    "description": "import store derived - Derives a store from one or more other stores. The callback runs initially when the first subscriber subscribes and then whenever the store dependencies change. In the simplest version, derived takes a single store, and the callback returns a derived value."
+  },
+  "svelte-import-store-get": {
+    "prefix": "s-imp-store-get",
+    "body": [
+      "import { get } from \"svelte/store\";"
+    ],
+    "description": "import store get - Generally, you should read the value of a store by subscribing to it and using the value as it changes over time. Occasionally, you may need to retrieve the value of a store to which you're not subscribed. get allows you to do so. NOTE: This works by creating a subscription, reading the value, then unsubscribing. It's therefore not recommended in hot code paths."
+  },
+  "svelte-import-motion-tweened": {
+    "prefix": "s-imp-motion-tweened",
+    "body": [
+      "import { tweened } from \"svelte/motion\";"
+    ],
+    "description": "import motion tweened - Tweened stores update their values over a fixed duration. The following options are available: delay (number, default 0) — milliseconds before starting duration (number | function, default 400) — milliseconds the tween lasts easing (function, default t => t) — an easing function interpolate (function)"
+  },
+  "svelte-import-motion-spring": {
+    "prefix": "s-imp-motion-spring",
+    "body": [
+      "import { spring } from \"svelte/motion\";"
+    ],
+    "description": "import motion spring - A spring store gradually changes to its target value based on its stiffness and damping parameters. Whereas tweened stores change their values over a fixed duration, spring stores change over a duration that is determined by their existing velocity, allowing for more natural-seeming motion in many situations. The following options are available: stiffness (number, default 0.15) — a value between 0 and 1 where higher means a 'tighter' spring damping (number, default 0.8) — a value between 0 and 1 where lower means a 'springier' spring precision (number, default 0.01) — determines the threshold at which the spring is considered to have 'settled', where lower means more precise All of the options above can be changed while the spring is in motion, and will take immediate effect."
+  },
+  "svelte-import-transition-fade": {
+    "prefix": "s-imp-transition-fade",
+    "body": [
+      "import { fade } from \"svelte/transition\";"
+    ],
+    "description": "import transition fade - Animates the opacity of an element from 0 to the current opacity for in transitions and from the current opacity to 0 for out transitions."
+  },
+  "svelte-import-transition-blur": {
+    "prefix": "s-imp-transition-blur",
+    "body": [
+      "import { blur } from \"svelte/transition\";"
+    ],
+    "description": "import transition blur - Animates a blur filter alongside an element's opacity."
+  },
+  "svelte-import-transition-fly": {
+    "prefix": "s-imp-transition-fly",
+    "body": [
+      "import { fly } from \"svelte/transition\";"
+    ],
+    "description": "import transition fly - Animates the x and y positions and the opacity of an element. in transitions animate from an element's current (default) values to the provided values, passed as parameters. out transitions animate from the provided values to an element's default values. "
+  },
+  "svelte-import-transition-slide": {
+    "prefix": "s-imp-transition-slide",
+    "body": [
+      "import { slide } from \"svelte/transition\";"
+    ],
+    "description": "import transition slide - Slides an element in and out."
+  },
+  "svelte-import-transition-scale": {
+    "prefix": "s-imp-transition-scale",
+    "body": [
+      "import { scale } from \"svelte/transition\";"
+    ],
+    "description": "import transition scale - Animates the opacity and scale of an element. in transitions animate from an element's current (default) values to the provided values, passed as parameters. out transitions animate from the provided values to an element's default values."
+  },
+  "svelte-import-transition-draw": {
+    "prefix": "s-imp-transition-draw",
+    "body": [
+      "import { draw } from \"svelte/transition\";"
+    ],
+    "description": "import transition draw - Animates the stroke of an SVG element, like a snake in a tube. in transitions begin with the path invisible and draw the path to the screen over time. out transitions start in a visible state and gradually erase the path. draw only works with elements that have a getTotalLength method, like <path> and <polyline>."
+  },
+  "svelte-import-transition-crossfade": {
+    "prefix": "s-imp-transition-crossfade",
+    "body": [
+      "import { crossfade } from \"svelte/transition\";"
+    ],
+    "description": "import transition crossfade - The crossfade function creates a pair of transitions called send and receive. When an element is 'sent', it looks for a corresponding element being 'received', and generates a transition that transforms the element to its counterpart's position and fades it out. When an element is 'received', the reverse happens. If there is no counterpart, the fallback transition is used."
+  },
+  "svelte-import-animate-flip": {
+    "prefix": "s-imp-animate-flip",
+    "body": [
+      "import { flip } from \"svelte/animate\";"
+    ],
+    "description": "import animate flip - The flip function calculates the start and end position of an element and animates between them, translating the x and y values. flip stands for First, Last, Invert, Play."
+  },
+  "svelte-import-easing": {
+    "prefix": "s-imp-easing",
+    "body": [
+      "import { $1} from \"svelte/easing\";"
+    ],
+    "description": "import easing - linear backIn backOut backInOut, bounceIn bounceOut bounceInOut, circIn circOut circInOut | cubicIn cubicOut cubicInOut | elasticIn elasticOut elasticInOut | expoIn expoOut expoInOut | quadIn quadOut quadInOut | quartIn quartOut quartInOut | quintIn quintOut quintInOut | sineIn sineOut sineInOut"
   }
 }
