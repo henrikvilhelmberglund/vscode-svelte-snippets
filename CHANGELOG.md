@@ -1,3 +1,15 @@
+### [0.5.4](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.3...v0.5.4) (2022-11-04)
+
+
+### Features
+
+* :sparkles: add a bunch of import snippets and edit descriptions, fix typos ([dff3070](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/dff3070833c1050ebecaeadd29a8d86624904bfb))
+
+
+### Bug Fixes
+
+* :bug: move base import into script snippets ([3d3e519](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/3d3e519f3b1582a7e90921d66a300656f435c182))
+
 ### [0.5.3](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.2...v0.5.3) (2022-11-02)
 
 
