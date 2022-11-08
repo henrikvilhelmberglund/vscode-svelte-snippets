@@ -1,3 +1,10 @@
+### [0.5.7](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.6...v0.5.7) (2022-11-08)
+
+
+### Bug Fixes
+
+* :construction: forgot to package extension before publishing... ([a2c8c7e](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/a2c8c7e787ba1e5b0083266dd3a1db646f890ecc))
+
 ### [0.5.6](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.5...v0.5.6) (2022-11-08)
 
 
