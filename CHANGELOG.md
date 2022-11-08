@@ -1,3 +1,10 @@
+### [0.5.5](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.4...v0.5.5) (2022-11-08)
+
+
+### Features
+
+* :sparkles: add svelte-config-base-github snippet ([2be70c8](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/2be70c8b889d9df1b9d0ec45b7a3ae9757ba472c))
+
 ### [0.5.4](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.3...v0.5.4) (2022-11-04)
 
 
