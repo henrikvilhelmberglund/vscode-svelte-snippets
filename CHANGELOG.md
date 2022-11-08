@@ -1,3 +1,10 @@
+### [0.5.6](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.5...v0.5.6) (2022-11-08)
+
+
+### Bug Fixes
+
+* :ambulance: ([8e8f195](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/8e8f19503a43e85e234479cbb2aa8fc8d029bffa))
+
 ### [0.5.5](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.4...v0.5.5) (2022-11-08)
 
 
