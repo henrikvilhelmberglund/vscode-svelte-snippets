@@ -465,6 +465,6 @@
       "\tbase: dev ? \"\" : \"/repo-name\"",
       "},"
     ],
-    "description": "adds settings to not add base folder whet locally developing but add base folder when deploying"
+    "description": "adds settings to not add base folder when locally developing but add base folder when deploying"
   }
 }
