@@ -455,5 +455,16 @@
       "import { $1} from \"svelte/easing\";"
     ],
     "description": "import easing - linear backIn backOut backInOut, bounceIn bounceOut bounceInOut, circIn circOut circInOut | cubicIn cubicOut cubicInOut | elasticIn elasticOut elasticInOut | expoIn expoOut expoInOut | quadIn quadOut quadInOut | quartIn quartOut quartInOut | quintIn quintOut quintInOut | sineIn sineOut sineInOut"
+  },
+  "svelte-config-base-github": {
+    "prefix": "s-config-base-github",
+    "body": [
+      "const dev = process.argv.includes('dev');",
+      "//put the lines below inside of kit: { } in svelte.config.js",
+      "paths: {",
+      "\tbase: dev ? \"\" : \"/repo-name\"",
+      "},"
+    ],
+    "description": "adds settings to not add base folder whet locally developing but add base folder when deploying"
   }
 }
