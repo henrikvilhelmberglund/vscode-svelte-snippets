@@ -1,3 +1,10 @@
+### [0.5.8](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.7...v0.5.8) (2022-11-25)
+
+
+### Features
+
+* :sparkles: add svx support for HTML type snippets (maybe) ([a067c78](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/a067c78286be0e4e32561d5cb009c940947f5d53))
+
 ### [0.5.7](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.6...v0.5.7) (2022-11-08)
 
 
