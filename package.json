@@ -53,6 +53,10 @@
       {
         "language": "html",
         "path": "./snippets/svelte.json"
+      },
+      {
+        "language": "svx",
+        "path": "./snippets/svelte.json"
       }
     ]
   },
