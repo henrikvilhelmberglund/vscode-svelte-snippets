@@ -1,3 +1,10 @@
+### [0.5.9](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.8...v0.5.9) (2022-11-26)
+
+
+### Bug Fixes
+
+* :bug: change svx (which did nothing) to markdown to get snippets in markdown part of .svx file ([a43e7ed](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/a43e7eddb1482769194477a76be85bb2ba7aa6ec))
+
 ### [0.5.8](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.7...v0.5.8) (2022-11-25)
 
 
