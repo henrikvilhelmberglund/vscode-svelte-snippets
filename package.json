@@ -55,7 +55,7 @@
         "path": "./snippets/svelte.json"
       },
       {
-        "language": "svx",
+        "language": "markdown",
         "path": "./snippets/svelte.json"
       }
     ]
