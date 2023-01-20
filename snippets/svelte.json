@@ -524,7 +524,7 @@
       "onMount(() => {",
       "let body = document.querySelector('body');",
       "body.style.display = 'block';",
-      "}",
+      "});",
       "\t$1",
       "</script>",
       "",
