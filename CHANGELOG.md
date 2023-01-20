@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.13](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.12...v0.5.13) (2023-01-20)
+
+
+### Features
+
+* :sparkles: update package.json scripts ([433c1d9](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/433c1d902489bfc5f60de5fac218180f114a72db))
+
+
+### Bug Fixes
+
+* :bug: fix typo in s-!-js ([035d318](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/035d318ee0b48158d5b07d69002a082c34104f1d))
+
 ## [0.5.12](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.11...v0.5.12) (2023-01-20)
 
 
