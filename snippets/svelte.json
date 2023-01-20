@@ -23,6 +23,15 @@
     ],
     "description": "add a script to your svelte file"
   },
+  "svelte-typescript-script-tag": {
+		"prefix": "s-ts-script",
+		"body": [
+			"<script lang=\"ts\">",
+			"\t$1",
+			"</script>"
+		],
+		"description": "add a typescript script to your svelte file"
+	},
   "svelte-script-context": {
     "prefix": "s-script-context",
     "body": [
