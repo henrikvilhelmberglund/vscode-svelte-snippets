@@ -62,6 +62,15 @@
     ],
     "description": "html content expression"
   },
+  "svelte-key-block": {
+    "prefix": "s-key-block",
+    "body": [
+      "{#key $1}",
+      "\t$2",
+      "{/key}"
+    ],
+    "description": "key block"
+  },
   "svelte-if-block": {
     "prefix": "s-if-block",
     "body": [
