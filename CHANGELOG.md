@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.12](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.11...v0.5.12) (2023-01-20)
+
+
+### Features
+
+* :sparkles: add s-docs ([6f40571](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/6f40571d750fc27702e277cf0491abd4fdaf1967))
+* :sparkles: add typescript script tag ([4ae8204](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/4ae8204f0641eb0b800ae06d589119e6eb3473c2))
+
+
+### Bug Fixes
+
+* :art: fix description of vanilla JS boilerplate ([4182407](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/4182407d728fefead0603dcc3782831090578642))
+* :bug: remove class shorthand extra } ([3483896](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/3483896c107134f2430a9d0690dbf5f7b76a4517))
+
 ## [0.5.11](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.10...v0.5.11) (2023-01-20)
 
 

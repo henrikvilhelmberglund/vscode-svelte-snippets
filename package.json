@@ -2,7 +2,7 @@
   "name": "vscode-svelte-snippets-henrikvilhelmberglund",
   "displayName": "Svelte 3 Snippets",
   "description": "Svelte 3 Snippets for VS Code (fork)",
-  "version": "0.5.11",
+  "version": "0.5.12",
   "license": "MIT",
   "publisher": "henrikvilhelmberglund",
   "icon": "icons/logo.png",
