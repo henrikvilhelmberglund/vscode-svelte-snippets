@@ -538,6 +538,6 @@
       "\t$3",
       "</style>"
     ],
-    "description": "boilerplate for svelte page with using vanillaish JS"
+    "description": "boilerplate for svelte page with vanillaish JS"
   }
 }
