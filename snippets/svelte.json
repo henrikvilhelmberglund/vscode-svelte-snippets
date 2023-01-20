@@ -539,5 +539,15 @@
       "</style>"
     ],
     "description": "boilerplate for svelte page with vanillaish JS"
+  },
+  "Svelte Documentation Comment": {
+    "prefix": "s-docs",
+    "body": [
+      "<!--",
+      "  @component",
+      "  ${1:This is a component description.}",
+      "-->"
+    ],
+    "description": "Svelte Documentation Comment. It's possible to use markdown in the comment."
   }
 }
