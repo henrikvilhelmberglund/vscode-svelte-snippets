@@ -337,7 +337,7 @@
   "svelte-class-short": {
     "prefix": "s-class-short",
     "body": [
-      "class:${1:name}}"
+      "class:${1:name}"
     ],
     "description": "class shorthand"
   },
