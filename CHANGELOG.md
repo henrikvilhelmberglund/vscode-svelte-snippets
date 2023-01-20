@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.11](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.10...v0.5.11) (2023-01-20)
+
+
+### Bug Fixes
+
+* :fire: remove broken badges ([b1df0b7](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/b1df0b7e28e9d691cc83857d7d7b66e65901b2b5))
+
 ## [0.5.10](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.9...v0.5.10) (2023-01-20)
 
 
