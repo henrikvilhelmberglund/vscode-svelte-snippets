@@ -497,5 +497,29 @@
       "</style>"
     ],
     "description": "boilerplate for svelte page with base folder import"
+  },
+  "svelte-boilerplate-js": {
+    "prefix": "s-!-js",
+    "body": [
+      "<script>",
+      "import { onMount } from 'svelte';",
+      "onMount(() => {",
+      "let body = document.querySelector('body');",
+      "body.style.display = 'block';",
+      "}",
+      "\t$1",
+      "</script>",
+      "",
+      "<svelte:body bind:this={document} />",
+      "$2",
+      "",
+      "<style>",
+      ":global(body) {",
+      "  display: none;",
+      "}",
+      "\t$3",
+      "</style>"
+    ],
+    "description": "boilerplate for svelte page with using vanillaish JS"
   }
 }
