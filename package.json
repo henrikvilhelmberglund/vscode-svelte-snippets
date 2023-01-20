@@ -61,9 +61,10 @@
     ]
   },
   "scripts": {
-    "vscode:publish": "vsce publish",
+    "publish": "vsce publish",
     "version": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s",
-    "release": "commit-and-tag-version"
+    "release": "commit-and-tag-version",
+    "postrelease": "git push --follow-tags origin master"
   },
   "devDependencies": {
     "commit-and-tag-version": "^11.0.0"
