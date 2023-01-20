@@ -1,3 +1,16 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
+
+## [0.5.10](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.9...v0.5.10) (2023-01-20)
+
+
+### Features
+
+* :sparkles: add .prettierignore ([16e4f8f](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/16e4f8ff3483ae56e1a775f9e51d91a9c7eec21b))
+* :sparkles: add boilerplate for vanilla js (ish) ([02a6913](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/02a6913aeba652bd8bdd0a4b800a890fd5061323))
+* :sparkles: add missing {#key} block ([d36cb1b](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/d36cb1b6edd2cc8389e8b767a68df0bfc31334cd))
+
 ### [0.5.9](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.8...v0.5.9) (2022-11-26)
 
 
@@ -75,4 +88,3 @@
 * :bug: escape $app ([fa4660d](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/fa4660d527e7bb07ba4edc78d54652f9619f56bd))
 * **selection:** tab through options ([461c4b7](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/461c4b7b54d0f55183c148b6758f00144fcbcb3e))
 * unfix a bug ([5b84751](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/5b84751098fa9a86ea76ab997c9ae7805a215a58))
-
