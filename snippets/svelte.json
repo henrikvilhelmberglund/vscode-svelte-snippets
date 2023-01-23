@@ -528,7 +528,6 @@
       "\t$1",
       "</script>",
       "",
-      "<svelte:body bind:this={document} />",
       "$2",
       "",
       "<style>",
