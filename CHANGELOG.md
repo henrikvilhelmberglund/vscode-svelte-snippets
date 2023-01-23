@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.14](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.13...v0.5.14) (2023-01-23)
+
+
+### Features
+
+* :sparkles: add async snippet for onMount ([263abb5](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/263abb5d3148380dd0f4e835d43beee6b3944e81))
+* :sparkles: use async in onMount, add commented out import statement ([fa119dc](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/fa119dcd7741aa2124ee2daded4eeb81a0b069be))
+
+
+### Bug Fixes
+
+* :fire: remove unneeded bind statement ([20b76ec](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/20b76ecac858489be70a3056a3c4c515accc833b))
+
 ## [0.5.13](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.12...v0.5.13) (2023-01-20)
 
 
