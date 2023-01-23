@@ -521,9 +521,10 @@
     "body": [
       "<script>",
       "import { onMount } from 'svelte';",
-      "onMount(() => {",
+      "onMount(async () => {",
       "let body = document.querySelector('body');",
       "body.style.display = 'block';",
+      "// await import(\"./main.js\");",
       "});",
       "\t$1",
       "</script>",
