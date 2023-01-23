@@ -80,6 +80,15 @@
     ],
     "description": "svelte onMount - The onMount function schedules a callback to run as soon as the component has been mounted to the DOM. It must be called during the component's initialisation (but doesn't need to live inside the component; it can be called from an external module)."
   },
+  "svelte-on-mount-async": {
+    "prefix": "s-lifecycle-on-mount-async",
+    "body": [
+      "onMount(async () => {",
+      "\t$1",
+      "});"
+    ],
+    "description": "(async version)svelte onMount - The onMount function schedules a callback to run as soon as the component has been mounted to the DOM. It must be called during the component's initialisation (but doesn't need to live inside the component; it can be called from an external module)."
+  },
   "svelte-before-update": {
     "prefix": "s-lifecycle-before-update",
     "body": [
