@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.15](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.14...v0.5.15) (2023-01-25)
+
+
+### Features
+
+* :sparkles: split js into normal and async version ([12b7564](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/12b756494217f1e17ac86bff7fad082d61467395))
+
 ## [0.5.14](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.13...v0.5.14) (2023-01-23)
 
 
