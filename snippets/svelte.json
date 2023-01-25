@@ -521,6 +521,30 @@
     "body": [
       "<script>",
       "import { onMount } from 'svelte';",
+      "onMount(() => {",
+      "let body = document.querySelector('body');",
+      "body.style.display = 'block';",
+      "// import(\"./main.js\");",
+      "});",
+      "\t$1",
+      "</script>",
+      "",
+      "$2",
+      "",
+      "<style>",
+      ":global(body) {",
+      "  display: none;",
+      "}",
+      "\t$3",
+      "</style>"
+    ],
+    "description": "boilerplate for svelte page with vanillaish JS"
+  },
+  "svelte-boilerplate-js-async": {
+    "prefix": "s-!-js-async",
+    "body": [
+      "<script>",
+      "import { onMount } from 'svelte';",
       "onMount(async () => {",
       "let body = document.querySelector('body');",
       "body.style.display = 'block';",
@@ -538,7 +562,7 @@
       "\t$3",
       "</style>"
     ],
-    "description": "boilerplate for svelte page with vanillaish JS"
+    "description": "(async) boilerplate for svelte page with vanillaish JS"
   },
   "Svelte Documentation Comment": {
     "prefix": "s-docs",
