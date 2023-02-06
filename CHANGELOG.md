@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.16](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.15...v0.5.16) (2023-02-06)
+
+
+### Bug Fixes
+
+* :art: add -imp after lifecycle functions to have them below the using of the function ([e6fecc7](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/e6fecc7d9e847b52b8fc3228e2e2203e709e8b74))
+
 ## [0.5.15](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.14...v0.5.15) (2023-01-25)
 
 
