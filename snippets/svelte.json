@@ -473,7 +473,7 @@
     "prefix": "s-head",
     "body": [
       "<svelte:head>",
-      "\t$1",
+      "\t$0",
       "</svelte:head>"
     ],
     "description": "svelte:head"
@@ -489,13 +489,13 @@
     "prefix": "s-!",
     "body": [
       "<script>",
-      "\t$1",
+      "\t$0",
       "</script>",
       "",
-      "$2",
+      "",
       "",
       "<style>",
-      "\t$3",
+      "\t",
       "</style>"
     ],
     "description": "boilerplate for svelte page"
@@ -505,13 +505,13 @@
     "body": [
       "<script>",
       "import { base } from \"\\$app/paths\";",
-      "\t$1",
+      "\t$0",
       "</script>",
       "",
-      "$2",
+      "",
       "",
       "<style>",
-      "\t$3",
+      "\t",
       "</style>"
     ],
     "description": "boilerplate for svelte page with base folder import"
@@ -526,16 +526,16 @@
       "body.style.display = 'block';",
       "// import(\"./main.js\");",
       "});",
-      "\t$1",
+      "\t$0",
       "</script>",
       "",
-      "$2",
+      "",
       "",
       "<style>",
       ":global(body) {",
       "  display: none;",
       "}",
-      "\t$3",
+      "\t",
       "</style>"
     ],
     "description": "boilerplate for svelte page with vanillaish JS"
@@ -550,16 +550,16 @@
       "body.style.display = 'block';",
       "// await import(\"./main.js\");",
       "});",
-      "\t$1",
+      "\t$0",
       "</script>",
       "",
-      "$2",
+      "",
       "",
       "<style>",
       ":global(body) {",
       "  display: none;",
       "}",
-      "\t$3",
+      "\t",
       "</style>"
     ],
     "description": "(async) boilerplate for svelte page with vanillaish JS"
@@ -570,7 +570,8 @@
       "<!--",
       "  @component",
       "  ${1:This is a component description.}",
-      "-->"
+      "-->",
+      "$0"
     ],
     "description": "Svelte Documentation Comment. It's possible to use markdown in the comment."
   }
