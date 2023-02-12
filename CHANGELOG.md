@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.17](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.16...v0.5.17) (2023-02-12)
+
+
+### Bug Fixes
+
+* :bug: change some $1 to $0 ([f606f03](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/f606f032237a21bd05a8d1848100f9075d4428c5))
+* :bug: tweak snippet tab stops ([8350ae6](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/8350ae688db843ca548717b4dd0135566a3fdfc8))
+
 ## [0.5.16](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.15...v0.5.16) (2023-02-06)
 
 
