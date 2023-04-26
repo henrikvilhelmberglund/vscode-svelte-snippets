@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.18](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.17...v0.5.18) (2023-04-26)
+
+
+### Features
+
+* :sparkles: add $$props and $$restProps ([b12e63b](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/b12e63bcb7dfacdf8a0be7450faebe399b81daeb))
+
+
+### Bug Fixes
+
+* :art: change lifecycle imports to use lifecycle prefix ([f9a1316](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/f9a13168705645030ec3dab878839e7429e723da))
+
 ## [0.5.17](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.16...v0.5.17) (2023-02-12)
 
 
