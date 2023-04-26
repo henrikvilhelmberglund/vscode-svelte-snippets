@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.19](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.18...v0.5.19) (2023-04-26)
+
+
+### Features
+
+* :sparkles: add svelte-fragment ([26dbecf](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/26dbecf0019ff6acc4ee93804622b786e8d5656d))
+
 ## [0.5.18](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.17...v0.5.18) (2023-04-26)
 
 
