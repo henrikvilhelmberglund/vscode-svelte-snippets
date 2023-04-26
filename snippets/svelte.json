@@ -574,5 +574,19 @@
       "$0"
     ],
     "description": "Svelte Documentation Comment. It's possible to use markdown in the comment."
+  },
+  "svelte-props": {
+    "prefix": "s-props",
+    "body": [
+      "{...$$props}"
+    ],
+    "description": "Svelte $$props. Spreads all props into component."
+  },
+  "svelte-rest-props": {
+    "prefix": "s-rest-props",
+    "body": [
+      "{...$$restProps}"
+    ],
+    "description": "Svelte $$restProps. Spreads all props except exported props into component."
   }
 }
