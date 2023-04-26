@@ -478,6 +478,15 @@
     ],
     "description": "svelte:head"
   },
+  "svelte-fragment": {
+    "prefix": "s-fragment",
+    "body": [
+      "<svelte:fragment>",
+      "\t$0",
+      "</svelte:fragment>"
+    ],
+    "description": "svelte:fragment"
+  },
   "svelte-options": {
     "prefix": "s-options",
     "body": [
