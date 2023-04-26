@@ -284,21 +284,21 @@
     "description": "import base folder from $app/paths (for Github Pages etc)"
   },
   "svelte-import-onMount": {
-    "prefix": "s-onmount-imp",
+    "prefix": "s-lifecycle-on-mount-imp",
     "body": [
       "import { onMount } from \"svelte\";"
     ],
     "description": "import onMount - The onMount function schedules a callback to run as soon as the component has been mounted to the DOM. It must be called during the component's initialisation (but doesn't need to live inside the component; it can be called from an external module)."
   },
   "svelte-import-beforeUpdate": {
-    "prefix": "s-beforeupdate-imp",
+    "prefix": "s-lifecycle-before-update-imp",
     "body": [
       "import { beforeUpdate } from \"svelte\";"
     ],
     "description": "import beforeUpdate - Schedules a callback to run immediately before the component is updated after any state change."
   },
   "svelte-import-afterUpdate": {
-    "prefix": "s-after-update-imp",
+    "prefix": "s-lifecycle-after-update-imp",
     "body": [
       "import { afterUpdate } from \"svelte\";"
     ],
@@ -347,7 +347,7 @@
     "description": "import hasContext - Checks whether a given key has been set in the context of a parent component. Must be called during component initialisation."
   },
   "svelte-import-getAllContexts": {
-    "prefix": "s-get-all-contexts-imp",
+    "prefix": "s-context-get-all-contexts-imp",
     "body": [
       "import { getAllContexts } from \"svelte\";"
     ],
