@@ -597,5 +597,11 @@
       "{...$$restProps}"
     ],
     "description": "Svelte $$restProps. Spreads all props except exported props into component."
+  },
+  "svelte-uno-app-html": {
+    "prefix": "s-uno-app-html",
+    "body": [
+      "%unocss-svelte-scoped.global%"
+    ]
   }
 }
