@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.20](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.19...v0.5.20) (2023-06-30)
+
+
+### Features
+
+* :sparkles: add s-uno-app-html ([7d17828](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/7d178287f74c02142817e244fdfe1f73cc8d8460))
+* :sparkles: add s-uno-hooks-server-js ([09dd90a](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/09dd90a9d1302b023359104f4df1b331ad20e2ac))
+
+
+### Bug Fixes
+
+* :bug: use npx ([c0a9678](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/c0a9678830ca7da89c00edc7ff81bd9e1aeb5c01))
+
 ## [0.5.19](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.18...v0.5.19) (2023-04-26)
 
 
