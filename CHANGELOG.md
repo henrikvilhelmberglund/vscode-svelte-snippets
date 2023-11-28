@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.21](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.20...v0.5.21) (2023-11-28)
+
+
+### Features
+
+* add language typescript ([92bad06](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/92bad06214b89bce335a4134b02ceaed0a81bdbf))
+
 ## [0.5.20](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.19...v0.5.20) (2023-06-30)
 
 
