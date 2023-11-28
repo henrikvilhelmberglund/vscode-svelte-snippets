@@ -47,6 +47,10 @@
         "path": "./snippets/svelte-script.json"
       },
       {
+        "language": "typescript",
+        "path": "./snippets/svelte-script.json"
+      },
+      {
         "language": "css",
         "path": "./snippets/svelte-style.json"
       },
