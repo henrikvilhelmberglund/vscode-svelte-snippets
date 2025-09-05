@@ -1,5 +1,9 @@
 # Fork of VSCode-Svelte-Snippets
 
+## This is a Svelte 3/4 extension
+
+For the Svelte 5 extension see https://github.com/henrikvilhelmberglund/vscode-svelte5-snippets
+
 This fork:
 - removes comments in snippets
 - adds base folder import (s-base)
