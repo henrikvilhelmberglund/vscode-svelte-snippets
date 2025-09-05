@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.22](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.21...v0.5.22) (2025-09-05)
+
+
+### Features
+
+* add s-const snippet ([01730ce](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/commit/01730ce55a42af05bc6ccb2bdf9ec102e971cbf8))
+
 ## [0.5.21](https://github.com/henrikvilhelmberglund/vscode-svelte-snippets/compare/v0.5.20...v0.5.21) (2023-11-28)
 
 
